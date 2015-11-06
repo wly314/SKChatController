@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8A519531BEC71E500A8949B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A519521BEC71E500A8949B /* main.m */; };
+		D8A519561BEC71E500A8949B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A519551BEC71E500A8949B /* AppDelegate.m */; };
+		D8A519591BEC71E500A8949B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A519581BEC71E500A8949B /* ViewController.m */; };
+		D8A5195C1BEC71E500A8949B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A5195A1BEC71E500A8949B /* Main.storyboard */; };
+		D8A5195F1BEC71E500A8949B /* SKChatControllerDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8A5195D1BEC71E500A8949B /* SKChatControllerDemo.xcdatamodeld */; };
+		D8A519611BEC71E500A8949B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A519601BEC71E500A8949B /* Assets.xcassets */; };
+		D8A519641BEC71E500A8949B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A519621BEC71E500A8949B /* LaunchScreen.storyboard */; };
+		D8A5196F1BEC71E500A8949B /* SKChatControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A5196E1BEC71E500A8949B /* SKChatControllerDemoTests.m */; };
+		D8A5197A1BEC71E500A8949B /* SKChatControllerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A519791BEC71E500A8949B /* SKChatControllerDemoUITests.m */; };
+		D8A519A21BEC755200A8949B /* shishengjiaoliu5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A5199E1BEC755200A8949B /* shishengjiaoliu5@2x.png */; };
+		D8A519A31BEC755200A8949B /* shishengjiaoliu5@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A5199F1BEC755200A8949B /* shishengjiaoliu5@3x.png */; };
+		D8A519A41BEC755200A8949B /* shishengjiaoliu6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A519A01BEC755200A8949B /* shishengjiaoliu6@2x.png */; };
+		D8A519A51BEC755200A8949B /* shishengjiaoliu6@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A519A11BEC755200A8949B /* shishengjiaoliu6@3x.png */; };
+		D8A519AC1BEC757200A8949B /* chat_bottom_keyboard_nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A519A61BEC757200A8949B /* chat_bottom_keyboard_nor@3x.png */; };
+		D8A519AD1BEC757200A8949B /* chat_bottom_smile_nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A519A71BEC757200A8949B /* chat_bottom_smile_nor@3x.png */; };
+		D8A519AE1BEC757200A8949B /* chat_bottom_smile_press@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A519A81BEC757200A8949B /* chat_bottom_smile_press@3x.png */; };
+		D8A519AF1BEC757200A8949B /* chat_bottom_up_nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A519A91BEC757200A8949B /* chat_bottom_up_nor@3x.png */; };
+		D8A519B01BEC757200A8949B /* chat_bottom_up_press@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A519AA1BEC757200A8949B /* chat_bottom_up_press@3x.png */; };
+		D8A519B11BEC757200A8949B /* chat_bottom_keyboard_press@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A519AB1BEC757200A8949B /* chat_bottom_keyboard_press@3x.png */; };
+		D8A519B81BEC759200A8949B /* sk_shishengjiaoliu_jxb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A519B21BEC759200A8949B /* sk_shishengjiaoliu_jxb@2x.png */; };
+		D8A519B91BEC759200A8949B /* sk_shishengjiaoliu_jxb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A519B31BEC759200A8949B /* sk_shishengjiaoliu_jxb@3x.png */; };
+		D8A519BA1BEC759200A8949B /* sk_shishengjiaoliu_xtz@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A519B41BEC759200A8949B /* sk_shishengjiaoliu_xtz@2x.png */; };
+		D8A519BB1BEC759200A8949B /* sk_shishengjiaoliu_xtz@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A519B51BEC759200A8949B /* sk_shishengjiaoliu_xtz@3x.png */; };
+		D8A519BC1BEC759200A8949B /* sk_shishengjiaoliu_xzb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A519B61BEC759200A8949B /* sk_shishengjiaoliu_xzb@2x.png */; };
+		D8A519BD1BEC759200A8949B /* sk_shishengjiaoliu_xzb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A519B71BEC759200A8949B /* sk_shishengjiaoliu_xzb@3x.png */; };
+		D8A519BF1BEC75BA00A8949B /* Expression_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A519BE1BEC75BA00A8949B /* Expression_1@2x.png */; };
+		D8A51A1E1BEC982B00A8949B /* SKChatMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A51A141BEC982B00A8949B /* SKChatMessageViewController.m */; };
+		D8A51A1F1BEC982B00A8949B /* SKChatDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A51A171BEC982B00A8949B /* SKChatDataModel.m */; };
+		D8A51A201BEC982B00A8949B /* SKChatMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A51A1B1BEC982B00A8949B /* SKChatMessageCell.m */; };
+		D8A51A211BEC982B00A8949B /* SKInputViewToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A51A1D1BEC982B00A8949B /* SKInputViewToolBar.m */; };
+		D8A51A251BEC988C00A8949B /* SKCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A51A241BEC988C00A8949B /* SKCoreDataManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8A5196B1BEC71E500A8949B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8A519461BEC71E500A8949B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8A5194D1BEC71E500A8949B;
+			remoteInfo = SKChatControllerDemo;
+		};
+		D8A519761BEC71E500A8949B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8A519461BEC71E500A8949B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8A5194D1BEC71E500A8949B;
+			remoteInfo = SKChatControllerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D8A5194E1BEC71E500A8949B /* SKChatControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKChatControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8A519521BEC71E500A8949B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D8A519541BEC71E500A8949B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D8A519551BEC71E500A8949B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D8A519571BEC71E500A8949B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D8A519581BEC71E500A8949B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D8A5195B1BEC71E500A8949B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8A5195E1BEC71E500A8949B /* SKChatControllerDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SKChatControllerDemo.xcdatamodel; sourceTree = "<group>"; };
+		D8A519601BEC71E500A8949B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8A519631BEC71E500A8949B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8A519651BEC71E500A8949B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8A5196A1BEC71E500A8949B /* SKChatControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKChatControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8A5196E1BEC71E500A8949B /* SKChatControllerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKChatControllerDemoTests.m; sourceTree = "<group>"; };
+		D8A519701BEC71E500A8949B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8A519751BEC71E500A8949B /* SKChatControllerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKChatControllerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8A519791BEC71E500A8949B /* SKChatControllerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKChatControllerDemoUITests.m; sourceTree = "<group>"; };
+		D8A5197B1BEC71E500A8949B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8A5199E1BEC755200A8949B /* shishengjiaoliu5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shishengjiaoliu5@2x.png"; sourceTree = "<group>"; };
+		D8A5199F1BEC755200A8949B /* shishengjiaoliu5@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shishengjiaoliu5@3x.png"; sourceTree = "<group>"; };
+		D8A519A01BEC755200A8949B /* shishengjiaoliu6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shishengjiaoliu6@2x.png"; sourceTree = "<group>"; };
+		D8A519A11BEC755200A8949B /* shishengjiaoliu6@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shishengjiaoliu6@3x.png"; sourceTree = "<group>"; };
+		D8A519A61BEC757200A8949B /* chat_bottom_keyboard_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_bottom_keyboard_nor@3x.png"; sourceTree = "<group>"; };
+		D8A519A71BEC757200A8949B /* chat_bottom_smile_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_bottom_smile_nor@3x.png"; sourceTree = "<group>"; };
+		D8A519A81BEC757200A8949B /* chat_bottom_smile_press@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_bottom_smile_press@3x.png"; sourceTree = "<group>"; };
+		D8A519A91BEC757200A8949B /* chat_bottom_up_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_bottom_up_nor@3x.png"; sourceTree = "<group>"; };
+		D8A519AA1BEC757200A8949B /* chat_bottom_up_press@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_bottom_up_press@3x.png"; sourceTree = "<group>"; };
+		D8A519AB1BEC757200A8949B /* chat_bottom_keyboard_press@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_bottom_keyboard_press@3x.png"; sourceTree = "<group>"; };
+		D8A519B21BEC759200A8949B /* sk_shishengjiaoliu_jxb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sk_shishengjiaoliu_jxb@2x.png"; sourceTree = "<group>"; };
+		D8A519B31BEC759200A8949B /* sk_shishengjiaoliu_jxb@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sk_shishengjiaoliu_jxb@3x.png"; sourceTree = "<group>"; };
+		D8A519B41BEC759200A8949B /* sk_shishengjiaoliu_xtz@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sk_shishengjiaoliu_xtz@2x.png"; sourceTree = "<group>"; };
+		D8A519B51BEC759200A8949B /* sk_shishengjiaoliu_xtz@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sk_shishengjiaoliu_xtz@3x.png"; sourceTree = "<group>"; };
+		D8A519B61BEC759200A8949B /* sk_shishengjiaoliu_xzb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sk_shishengjiaoliu_xzb@2x.png"; sourceTree = "<group>"; };
+		D8A519B71BEC759200A8949B /* sk_shishengjiaoliu_xzb@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sk_shishengjiaoliu_xzb@3x.png"; sourceTree = "<group>"; };
+		D8A519BE1BEC75BA00A8949B /* Expression_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Expression_1@2x.png"; sourceTree = "<group>"; };
+		D8A51A131BEC982B00A8949B /* SKChatMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKChatMessageViewController.h; sourceTree = "<group>"; };
+		D8A51A141BEC982B00A8949B /* SKChatMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKChatMessageViewController.m; sourceTree = "<group>"; };
+		D8A51A161BEC982B00A8949B /* SKChatDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKChatDataModel.h; sourceTree = "<group>"; };
+		D8A51A171BEC982B00A8949B /* SKChatDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKChatDataModel.m; sourceTree = "<group>"; };
+		D8A51A1A1BEC982B00A8949B /* SKChatMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKChatMessageCell.h; sourceTree = "<group>"; };
+		D8A51A1B1BEC982B00A8949B /* SKChatMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKChatMessageCell.m; sourceTree = "<group>"; };
+		D8A51A1C1BEC982B00A8949B /* SKInputViewToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKInputViewToolBar.h; sourceTree = "<group>"; };
+		D8A51A1D1BEC982B00A8949B /* SKInputViewToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKInputViewToolBar.m; sourceTree = "<group>"; };
+		D8A51A231BEC988C00A8949B /* SKCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKCoreDataManager.h; sourceTree = "<group>"; };
+		D8A51A241BEC988C00A8949B /* SKCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKCoreDataManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8A5194B1BEC71E500A8949B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8A519671BEC71E500A8949B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8A519721BEC71E500A8949B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8A519451BEC71E500A8949B = {
+			isa = PBXGroup;
+			children = (
+				D8A519501BEC71E500A8949B /* SKChatControllerDemo */,
+				D8A5196D1BEC71E500A8949B /* SKChatControllerDemoTests */,
+				D8A519781BEC71E500A8949B /* SKChatControllerDemoUITests */,
+				D8A5194F1BEC71E500A8949B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8A5194F1BEC71E500A8949B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8A5194E1BEC71E500A8949B /* SKChatControllerDemo.app */,
+				D8A5196A1BEC71E500A8949B /* SKChatControllerDemoTests.xctest */,
+				D8A519751BEC71E500A8949B /* SKChatControllerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8A519501BEC71E500A8949B /* SKChatControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D8A519541BEC71E500A8949B /* AppDelegate.h */,
+				D8A519551BEC71E500A8949B /* AppDelegate.m */,
+				D8A519571BEC71E500A8949B /* ViewController.h */,
+				D8A519581BEC71E500A8949B /* ViewController.m */,
+				D8A5195A1BEC71E500A8949B /* Main.storyboard */,
+				D8A519601BEC71E500A8949B /* Assets.xcassets */,
+				D8A519621BEC71E500A8949B /* LaunchScreen.storyboard */,
+				D8A519651BEC71E500A8949B /* Info.plist */,
+				D8A5195D1BEC71E500A8949B /* SKChatControllerDemo.xcdatamodeld */,
+				D8A51A111BEC982B00A8949B /* SKChat */,
+				D8A51A101BEC97BB00A8949B /* SKChatDemoClass */,
+				D8A5199D1BEC753A00A8949B /* SKChatResource */,
+				D8A519511BEC71E500A8949B /* Supporting Files */,
+			);
+			path = SKChatControllerDemo;
+			sourceTree = "<group>";
+		};
+		D8A519511BEC71E500A8949B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8A519521BEC71E500A8949B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8A5196D1BEC71E500A8949B /* SKChatControllerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8A5196E1BEC71E500A8949B /* SKChatControllerDemoTests.m */,
+				D8A519701BEC71E500A8949B /* Info.plist */,
+			);
+			path = SKChatControllerDemoTests;
+			sourceTree = "<group>";
+		};
+		D8A519781BEC71E500A8949B /* SKChatControllerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8A519791BEC71E500A8949B /* SKChatControllerDemoUITests.m */,
+				D8A5197B1BEC71E500A8949B /* Info.plist */,
+			);
+			path = SKChatControllerDemoUITests;
+			sourceTree = "<group>";
+		};
+		D8A5199D1BEC753A00A8949B /* SKChatResource */ = {
+			isa = PBXGroup;
+			children = (
+				D8A5199E1BEC755200A8949B /* shishengjiaoliu5@2x.png */,
+				D8A5199F1BEC755200A8949B /* shishengjiaoliu5@3x.png */,
+				D8A519A01BEC755200A8949B /* shishengjiaoliu6@2x.png */,
+				D8A519A11BEC755200A8949B /* shishengjiaoliu6@3x.png */,
+				D8A519A61BEC757200A8949B /* chat_bottom_keyboard_nor@3x.png */,
+				D8A519A71BEC757200A8949B /* chat_bottom_smile_nor@3x.png */,
+				D8A519A81BEC757200A8949B /* chat_bottom_smile_press@3x.png */,
+				D8A519A91BEC757200A8949B /* chat_bottom_up_nor@3x.png */,
+				D8A519AA1BEC757200A8949B /* chat_bottom_up_press@3x.png */,
+				D8A519AB1BEC757200A8949B /* chat_bottom_keyboard_press@3x.png */,
+				D8A519B21BEC759200A8949B /* sk_shishengjiaoliu_jxb@2x.png */,
+				D8A519B31BEC759200A8949B /* sk_shishengjiaoliu_jxb@3x.png */,
+				D8A519B41BEC759200A8949B /* sk_shishengjiaoliu_xtz@2x.png */,
+				D8A519B51BEC759200A8949B /* sk_shishengjiaoliu_xtz@3x.png */,
+				D8A519B61BEC759200A8949B /* sk_shishengjiaoliu_xzb@2x.png */,
+				D8A519B71BEC759200A8949B /* sk_shishengjiaoliu_xzb@3x.png */,
+				D8A519BE1BEC75BA00A8949B /* Expression_1@2x.png */,
+			);
+			path = SKChatResource;
+			sourceTree = "<group>";
+		};
+		D8A51A101BEC97BB00A8949B /* SKChatDemoClass */ = {
+			isa = PBXGroup;
+			children = (
+				D8A51A221BEC988C00A8949B /* SKChatDemoUtil */,
+			);
+			path = SKChatDemoClass;
+			sourceTree = "<group>";
+		};
+		D8A51A111BEC982B00A8949B /* SKChat */ = {
+			isa = PBXGroup;
+			children = (
+				D8A51A121BEC982B00A8949B /* SKChatController */,
+				D8A51A151BEC982B00A8949B /* SKChatModel */,
+				D8A51A191BEC982B00A8949B /* SKChatView */,
+			);
+			path = SKChat;
+			sourceTree = "<group>";
+		};
+		D8A51A121BEC982B00A8949B /* SKChatController */ = {
+			isa = PBXGroup;
+			children = (
+				D8A51A131BEC982B00A8949B /* SKChatMessageViewController.h */,
+				D8A51A141BEC982B00A8949B /* SKChatMessageViewController.m */,
+			);
+			path = SKChatController;
+			sourceTree = "<group>";
+		};
+		D8A51A151BEC982B00A8949B /* SKChatModel */ = {
+			isa = PBXGroup;
+			children = (
+				D8A51A161BEC982B00A8949B /* SKChatDataModel.h */,
+				D8A51A171BEC982B00A8949B /* SKChatDataModel.m */,
+			);
+			path = SKChatModel;
+			sourceTree = "<group>";
+		};
+		D8A51A191BEC982B00A8949B /* SKChatView */ = {
+			isa = PBXGroup;
+			children = (
+				D8A51A1A1BEC982B00A8949B /* SKChatMessageCell.h */,
+				D8A51A1B1BEC982B00A8949B /* SKChatMessageCell.m */,
+				D8A51A1C1BEC982B00A8949B /* SKInputViewToolBar.h */,
+				D8A51A1D1BEC982B00A8949B /* SKInputViewToolBar.m */,
+			);
+			path = SKChatView;
+			sourceTree = "<group>";
+		};
+		D8A51A221BEC988C00A8949B /* SKChatDemoUtil */ = {
+			isa = PBXGroup;
+			children = (
+				D8A51A231BEC988C00A8949B /* SKCoreDataManager.h */,
+				D8A51A241BEC988C00A8949B /* SKCoreDataManager.m */,
+			);
+			path = SKChatDemoUtil;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8A5194D1BEC71E500A8949B /* SKChatControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8A5197E1BEC71E500A8949B /* Build configuration list for PBXNativeTarget "SKChatControllerDemo" */;
+			buildPhases = (
+				D8A5194A1BEC71E500A8949B /* Sources */,
+				D8A5194B1BEC71E500A8949B /* Frameworks */,
+				D8A5194C1BEC71E500A8949B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SKChatControllerDemo;
+			productName = SKChatControllerDemo;
+			productReference = D8A5194E1BEC71E500A8949B /* SKChatControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8A519691BEC71E500A8949B /* SKChatControllerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8A519811BEC71E500A8949B /* Build configuration list for PBXNativeTarget "SKChatControllerDemoTests" */;
+			buildPhases = (
+				D8A519661BEC71E500A8949B /* Sources */,
+				D8A519671BEC71E500A8949B /* Frameworks */,
+				D8A519681BEC71E500A8949B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8A5196C1BEC71E500A8949B /* PBXTargetDependency */,
+			);
+			name = SKChatControllerDemoTests;
+			productName = SKChatControllerDemoTests;
+			productReference = D8A5196A1BEC71E500A8949B /* SKChatControllerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D8A519741BEC71E500A8949B /* SKChatControllerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8A519841BEC71E500A8949B /* Build configuration list for PBXNativeTarget "SKChatControllerDemoUITests" */;
+			buildPhases = (
+				D8A519711BEC71E500A8949B /* Sources */,
+				D8A519721BEC71E500A8949B /* Frameworks */,
+				D8A519731BEC71E500A8949B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8A519771BEC71E500A8949B /* PBXTargetDependency */,
+			);
+			name = SKChatControllerDemoUITests;
+			productName = SKChatControllerDemoUITests;
+			productReference = D8A519751BEC71E500A8949B /* SKChatControllerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8A519461BEC71E500A8949B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = CC;
+				TargetAttributes = {
+					D8A5194D1BEC71E500A8949B = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					D8A519691BEC71E500A8949B = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = D8A5194D1BEC71E500A8949B;
+					};
+					D8A519741BEC71E500A8949B = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = D8A5194D1BEC71E500A8949B;
+					};
+				};
+			};
+			buildConfigurationList = D8A519491BEC71E500A8949B /* Build configuration list for PBXProject "SKChatControllerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8A519451BEC71E500A8949B;
+			productRefGroup = D8A5194F1BEC71E500A8949B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8A5194D1BEC71E500A8949B /* SKChatControllerDemo */,
+				D8A519691BEC71E500A8949B /* SKChatControllerDemoTests */,
+				D8A519741BEC71E500A8949B /* SKChatControllerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8A5194C1BEC71E500A8949B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8A519A31BEC755200A8949B /* shishengjiaoliu5@3x.png in Resources */,
+				D8A519B11BEC757200A8949B /* chat_bottom_keyboard_press@3x.png in Resources */,
+				D8A519BA1BEC759200A8949B /* sk_shishengjiaoliu_xtz@2x.png in Resources */,
+				D8A519A51BEC755200A8949B /* shishengjiaoliu6@3x.png in Resources */,
+				D8A519BF1BEC75BA00A8949B /* Expression_1@2x.png in Resources */,
+				D8A519641BEC71E500A8949B /* LaunchScreen.storyboard in Resources */,
+				D8A519AF1BEC757200A8949B /* chat_bottom_up_nor@3x.png in Resources */,
+				D8A519A41BEC755200A8949B /* shishengjiaoliu6@2x.png in Resources */,
+				D8A519B91BEC759200A8949B /* sk_shishengjiaoliu_jxb@3x.png in Resources */,
+				D8A519611BEC71E500A8949B /* Assets.xcassets in Resources */,
+				D8A5195C1BEC71E500A8949B /* Main.storyboard in Resources */,
+				D8A519A21BEC755200A8949B /* shishengjiaoliu5@2x.png in Resources */,
+				D8A519BD1BEC759200A8949B /* sk_shishengjiaoliu_xzb@3x.png in Resources */,
+				D8A519AE1BEC757200A8949B /* chat_bottom_smile_press@3x.png in Resources */,
+				D8A519BB1BEC759200A8949B /* sk_shishengjiaoliu_xtz@3x.png in Resources */,
+				D8A519B01BEC757200A8949B /* chat_bottom_up_press@3x.png in Resources */,
+				D8A519AC1BEC757200A8949B /* chat_bottom_keyboard_nor@3x.png in Resources */,
+				D8A519B81BEC759200A8949B /* sk_shishengjiaoliu_jxb@2x.png in Resources */,
+				D8A519BC1BEC759200A8949B /* sk_shishengjiaoliu_xzb@2x.png in Resources */,
+				D8A519AD1BEC757200A8949B /* chat_bottom_smile_nor@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8A519681BEC71E500A8949B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8A519731BEC71E500A8949B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8A5194A1BEC71E500A8949B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8A51A201BEC982B00A8949B /* SKChatMessageCell.m in Sources */,
+				D8A5195F1BEC71E500A8949B /* SKChatControllerDemo.xcdatamodeld in Sources */,
+				D8A51A251BEC988C00A8949B /* SKCoreDataManager.m in Sources */,
+				D8A51A1F1BEC982B00A8949B /* SKChatDataModel.m in Sources */,
+				D8A51A211BEC982B00A8949B /* SKInputViewToolBar.m in Sources */,
+				D8A519591BEC71E500A8949B /* ViewController.m in Sources */,
+				D8A51A1E1BEC982B00A8949B /* SKChatMessageViewController.m in Sources */,
+				D8A519561BEC71E500A8949B /* AppDelegate.m in Sources */,
+				D8A519531BEC71E500A8949B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8A519661BEC71E500A8949B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8A5196F1BEC71E500A8949B /* SKChatControllerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8A519711BEC71E500A8949B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8A5197A1BEC71E500A8949B /* SKChatControllerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8A5196C1BEC71E500A8949B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8A5194D1BEC71E500A8949B /* SKChatControllerDemo */;
+			targetProxy = D8A5196B1BEC71E500A8949B /* PBXContainerItemProxy */;
+		};
+		D8A519771BEC71E500A8949B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8A5194D1BEC71E500A8949B /* SKChatControllerDemo */;
+			targetProxy = D8A519761BEC71E500A8949B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8A5195A1BEC71E500A8949B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8A5195B1BEC71E500A8949B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8A519621BEC71E500A8949B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8A519631BEC71E500A8949B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8A5197C1BEC71E500A8949B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D8A5197D1BEC71E500A8949B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8A5197F1BEC71E500A8949B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SKChatControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MURP.SKChatControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D8A519801BEC71E500A8949B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SKChatControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MURP.SKChatControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D8A519821BEC71E500A8949B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SKChatControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MURP.SKChatControllerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SKChatControllerDemo.app/SKChatControllerDemo";
+			};
+			name = Debug;
+		};
+		D8A519831BEC71E500A8949B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SKChatControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MURP.SKChatControllerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SKChatControllerDemo.app/SKChatControllerDemo";
+			};
+			name = Release;
+		};
+		D8A519851BEC71E500A8949B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SKChatControllerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MURP.SKChatControllerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SKChatControllerDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D8A519861BEC71E500A8949B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SKChatControllerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MURP.SKChatControllerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SKChatControllerDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8A519491BEC71E500A8949B /* Build configuration list for PBXProject "SKChatControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8A5197C1BEC71E500A8949B /* Debug */,
+				D8A5197D1BEC71E500A8949B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8A5197E1BEC71E500A8949B /* Build configuration list for PBXNativeTarget "SKChatControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8A5197F1BEC71E500A8949B /* Debug */,
+				D8A519801BEC71E500A8949B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8A519811BEC71E500A8949B /* Build configuration list for PBXNativeTarget "SKChatControllerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8A519821BEC71E500A8949B /* Debug */,
+				D8A519831BEC71E500A8949B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8A519841BEC71E500A8949B /* Build configuration list for PBXNativeTarget "SKChatControllerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8A519851BEC71E500A8949B /* Debug */,
+				D8A519861BEC71E500A8949B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D8A5195D1BEC71E500A8949B /* SKChatControllerDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D8A5195E1BEC71E500A8949B /* SKChatControllerDemo.xcdatamodel */,
+			);
+			currentVersion = D8A5195E1BEC71E500A8949B /* SKChatControllerDemo.xcdatamodel */;
+			path = SKChatControllerDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D8A519461BEC71E500A8949B /* Project object */;
+}
