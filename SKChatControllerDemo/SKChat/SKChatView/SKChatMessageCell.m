@@ -64,7 +64,7 @@
         
         //聊天内容
         _skContentLabel = [[SKLabel alloc] init];
-        _skContentLabel.backgroundColor = [UIColor grayColor];
+        _skContentLabel.backgroundColor = [UIColor clearColor];
         _skContentLabel.numberOfLines = 0;
         [_skContentLabel setFont:[UIFont systemFontOfSize:CONTENT_LABEL_FONT_SIZE]];
         _skContentLabel.contentMode = UIViewContentModeCenter;

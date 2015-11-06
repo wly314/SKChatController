@@ -13,6 +13,9 @@
 @interface SKInputViewToolBar : UIView <UITextViewDelegate> {
     
     UIView *skContentView;//内容容器View
+    
+    BOOL    isFaceKeyBoardShow;//表情键盘是否显示
+    BOOL    isAddMoreBoardShow;//加号按钮点击更多是否显示
 }
 
 @property (nonatomic, weak)id <SKInputViewToolBarDelegate> delegate;

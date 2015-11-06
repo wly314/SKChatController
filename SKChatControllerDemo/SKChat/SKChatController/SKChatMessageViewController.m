@@ -26,8 +26,9 @@
 @end
 
 #define BOTTOMBAR_HEIGHT 44 //聊天栏Bar的高度
+#define KEYBOAR_SHOW_TIME 0.25//自定义键盘出现时间
 
-@interface SKChatMessageViewController ()<UITextViewDelegate, UITableViewDataSource, UITableViewDelegate> {
+@interface SKChatMessageViewController ()<UITextViewDelegate, UITableViewDataSource, UITableViewDelegate, SKInputViewToolBarDelegate> {
     
     UITableView         *skTableView;
     UITextView          *skTextView;//输入文本框 《＝ skToolBar.skInputToolBar
@@ -106,6 +107,7 @@
     
     SKInputViewToolBar *skInputToolBar = [[SKInputViewToolBar alloc] initWithFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height-45, [UIScreen mainScreen].bounds.size.width, 45)];
     skInputToolBar.backgroundColor = [UIColor grayColor];
+    skInputToolBar.delegate = self;
     [self.view addSubview:skInputToolBar];
     
     skToolBar = skInputToolBar;
@@ -135,15 +137,15 @@
     
     if (!self.cellHeightsDictionary[indexPath]) {
         
-        NSMutableAttributedString * string = [[ NSMutableAttributedString alloc ] initWithString:@"起泡起泡起泡起泡"  attributes:nil ] ;
+        NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:@"起泡起泡起泡起泡"  attributes:nil];
         [string addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:CONTENT_LABEL_FONT_SIZE] range:NSMakeRange(0,string.length-1)];
         
-        MMTextAttachment * textAttachment = [[ MMTextAttachment alloc ] initWithData:nil ofType:nil ] ;
-        UIImage * smileImage = [ UIImage imageNamed:@"Expression_1.png" ]  ;  //my emoticon image named a.jpg
-        textAttachment.image = smileImage ;
+        MMTextAttachment *textAttachment = [[MMTextAttachment alloc] initWithData:nil ofType:nil];
+        UIImage * smileImage = [UIImage imageNamed:@"Expression_1.png"];  //my emoticon image named a.jpg
+        textAttachment.image = smileImage;
         
-        NSAttributedString * textAttachmentString = [ NSAttributedString attributedStringWithAttachment:textAttachment ] ;
-        [ string insertAttributedString:textAttachmentString atIndex:6] ;
+        NSAttributedString *textAttachmentString = [NSAttributedString attributedStringWithAttachment:textAttachment];
+        [string insertAttributedString:textAttachmentString atIndex:6];
         
         CGRect contentRect = [SKChatMessageCell contentRectOfString:string];
         
@@ -177,19 +179,17 @@
         cell.skMessageType = SKMessageTypeReviced;
     }
     
-    NSMutableAttributedString * string = [[ NSMutableAttributedString alloc ] initWithString:@"起泡起泡起泡起泡"  attributes:nil ] ;
+    NSMutableAttributedString * string = [[NSMutableAttributedString alloc] initWithString:@"起泡起泡起泡起泡" attributes:nil];
     [string addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:CONTENT_LABEL_FONT_SIZE] range:NSMakeRange(0,string.length-1)];
     
-    MMTextAttachment * textAttachment = [[ MMTextAttachment alloc ] initWithData:nil ofType:nil ] ;
-    UIImage * smileImage = [ UIImage imageNamed:@"Expression_1.png" ]  ;  //my emoticon image named a.jpg
-    textAttachment.image = smileImage ;
+    MMTextAttachment * textAttachment = [[MMTextAttachment alloc] initWithData:nil ofType:nil];
+    UIImage * smileImage = [UIImage imageNamed:@"Expression_1.png"];  //my emoticon image named a.jpg
+    textAttachment.image = smileImage;
     
-    NSAttributedString * textAttachmentString = [ NSAttributedString attributedStringWithAttachment:textAttachment ] ;
-    [ string insertAttributedString:textAttachmentString atIndex:6 ] ;
+    NSAttributedString * textAttachmentString = [NSAttributedString attributedStringWithAttachment:textAttachment];
+    [string insertAttributedString:textAttachmentString atIndex:6];
     
     cell.skContentLabel.attributedText = string;
-    
-    
     
     return cell;
 }
@@ -201,15 +201,61 @@
 
 #pragma mark - SKInputViewToolBarDelegate
 //faceBoard点击方法 判断是否显示表情键盘
+/*
+ *点击加号按钮，显示More键盘，skToolBard上移，再次点击加号按钮，skToolBar下移到底部，隐藏More键盘。
+ *点击加号按钮，显示More键盘，skToolBard上移，此时点击表情按钮，skToolBard不要下移到底部，根据距离表情键盘高度上下移动，隐藏More键盘，显示表情键盘。
+ */
 - (void)skFaceButton:(UIButton *)skFaceButton showOrHideFaceKeyBoard:(BOOL)isShow {
     
-    
+    if (isShow) {
+        
+        [UIView animateWithDuration:KEYBOAR_SHOW_TIME animations:^{
+            
+            //skToolBard上移
+            skToolBar.center = CGPointMake(skToolBar.bounds.size.width/2, [UIScreen mainScreen].bounds.size.height - (127.0 + skToolBar.bounds.size.height/2));
+            
+        } completion:^(BOOL finished) {
+            
+        }];
+        
+    }else {
+        
+        [UIView animateWithDuration:KEYBOAR_SHOW_TIME animations:^{
+            
+            //skToolBard下移到底部
+            skToolBar.center = CGPointMake(skToolBar.bounds.size.width/2, [UIScreen mainScreen].bounds.size.height - (skToolBar.bounds.size.height/2));
+            
+        } completion:^(BOOL finished) {
+            
+        }];
+    }
 }
 
-//加号（➕）按钮点击方法 判断是否显示更多内容键盘
+//加号（＋）按钮点击方法 判断是否显示更多内容键盘
 - (void)skAddButton:(UIButton *)skAddButton showOrHideMoreKeyBoard:(BOOL)isShow {
     
-    
+    if (isShow) {
+        
+        [UIView animateWithDuration:KEYBOAR_SHOW_TIME animations:^{
+            
+            //skToolBard上移
+            skToolBar.center = CGPointMake(skToolBar.bounds.size.width/2, [UIScreen mainScreen].bounds.size.height - (127.0 + skToolBar.bounds.size.height/2));
+            
+        } completion:^(BOOL finished) {
+            
+        }];
+        
+    }else {
+        
+        [UIView animateWithDuration:KEYBOAR_SHOW_TIME animations:^{
+            
+            //skToolBard下移到底部
+            skToolBar.center = CGPointMake(skToolBar.bounds.size.width/2, [UIScreen mainScreen].bounds.size.height - (skToolBar.bounds.size.height/2));
+            
+        } completion:^(BOOL finished) {
+            
+        }];
+    }
 }
 
 #pragma mark - UIKeyboardNotification

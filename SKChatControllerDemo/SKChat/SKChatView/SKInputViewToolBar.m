@@ -42,6 +42,13 @@
         _skAddButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_skAddButton addTarget:self action:@selector(skAddButton:showOrHideMoreKeyBoard:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_skAddButton];
+        
+        /*
+         *表情键盘是否显示 加号按钮点击更多是否显示
+         *初始化为NO 不显示
+         */
+        isFaceKeyBoardShow = NO;
+        isAddMoreBoardShow = NO;
     }
     
     return self;
@@ -93,7 +100,10 @@
     
     if ([_delegate respondsToSelector:@selector(skFaceButton:showOrHideFaceKeyBoard:)]) {
         
+        isFaceKeyBoardShow = !isFaceKeyBoardShow;
+        isAddMoreBoardShow = NO;
         
+        [_delegate skFaceButton:skFaceButton showOrHideFaceKeyBoard:isFaceKeyBoardShow];
     }
 }
 
@@ -102,7 +112,10 @@
     
     if ([_delegate respondsToSelector:@selector(skAddButton:showOrHideMoreKeyBoard:)]) {
         
+        isAddMoreBoardShow = !isAddMoreBoardShow;
+        isFaceKeyBoardShow = NO;
         
+        [_delegate skAddButton:skAddButton showOrHideMoreKeyBoard:isAddMoreBoardShow];
     }
 }
 /*
